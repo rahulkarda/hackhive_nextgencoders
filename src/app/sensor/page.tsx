@@ -10,13 +10,13 @@ export default function Home() {
           Health Monitoring System
         </h1>
 
-        <div className="frame-containers flex flex-wrap items-center justify-evenly border rounded shadow-lg  p-10 ">
+        <div className="frame-containers flex flex-wrap items-center justify-evenly rounded shadow-lg  p-10 ">
           <div className="frame-card min-w-fit">
             <h1 className="text-center text-green-400">Temperature Graph</h1>
             <iframe
               height={300}
               width={500}
-              src="https://thingspeak.com/channels/2473517/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Tempreature&type=line"
+              src="https://thingspeak.com/channels/2473517/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=.&type=line"
             ></iframe>
           </div>
           <div className="frame-card min-w-fit">
@@ -24,7 +24,7 @@ export default function Home() {
             <iframe
               height={300}
               width={500}
-              src="https://thingspeak.com/channels/2473517/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humifity&type=line"
+              src="https://thingspeak.com/channels/2473517/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=.&type=line"
             ></iframe>
           </div>
           <div className="frame-card">
@@ -32,15 +32,15 @@ export default function Home() {
             <iframe
               height={300}
               width={500}
-              src="https://thingspeak.com/channels/2473517/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Soil+Moisture&type=line"
+              src="https://thingspeak.com/channels/2473517/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=.&type=line"
             ></iframe>
           </div>
           <div className="frame-card">
-            <h1 className="text-center text-green-400">Air Conditioning Graph</h1>
+            <h1 className="text-center text-green-400">Pressure Graph</h1>
             <iframe
               height={300}
               width={500}
-              src="https://thingspeak.com/channels/2473517/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Air+condition&type=line"
+              src="https://thingspeak.com/channels/2473517/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=.&type=line"
             ></iframe>
           </div>
         </div>

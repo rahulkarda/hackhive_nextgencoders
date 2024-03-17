@@ -109,7 +109,7 @@
 
 
 .frame-container{
-  margin-top: 4rem;
+  margin-top: 2rem;
   width:100vw;
   /* height :100%; */
   display: flex !important;
@@ -119,11 +119,11 @@
   padding: 1rem;
   }
 
-  .frame-container iframe{
+  .frame-container > iframe{
     /* width: clamp(30vw, 50%, 40vw) !important; */
     /* height: clamp(30vh, 50%, 40vh) !important; */
     width: 30rem;
-    /* height: 30rem !important; */
+    height: 30rem !important;
   }
 
   #authorText{
@@ -138,3 +138,35 @@
     content: "Raj Malpani" !important;
   }
 
+
+  @media screen and (min-width:1400px){
+    
+  }
+
+  @media (max-width:1400px){
+    
+  }
+
+  @media (min-width:1280px) and (max-width:1400px){
+    
+  }
+
+  @media (min-width:1024px) and (max-width:1280px){
+    
+  }
+
+  @media (min-width:640px) and (max-width:1024px){
+    ul{
+      gap: 2rem !important;
+    }
+  }
+
+  @media (max-width:640px){
+    
+    ul{
+      gap: 1rem !important;
+      font-size: 1rem !important;
+      background-color: pink;
+    }
+
+  }
