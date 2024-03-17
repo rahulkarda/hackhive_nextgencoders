@@ -24,7 +24,7 @@ export function Navbar() {
             <Link href="/about">About</Link>
           </li>
           <li className="cursor-pointer hover:underline text-md-lg text-sm-sm">
-            <Link href="/home">Crop Disease Detection</Link>
+            <Link href="/home">Disease Detection</Link>
           </li>
           <li className="cursor-pointer hover:underline text-md-lg text-sm-sm">
             <Link href="/sensor">Crop Monitoring</Link>
