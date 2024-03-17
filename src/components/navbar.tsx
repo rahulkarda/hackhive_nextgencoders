@@ -33,8 +33,8 @@ export function Navbar() {
             <Link href="/models">3D Models</Link>
           </li>
         </ul>
-      <ThemeToggle />
       </div>
+      <ThemeToggle />
     </nav>
   );
 }

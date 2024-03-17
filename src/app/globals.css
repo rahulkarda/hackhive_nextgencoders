@@ -162,11 +162,25 @@
   }
 
   @media (max-width:640px){
-    
+    .grid{
+      padding: 0 !important;
+    }
     ul{
-      gap: 1rem !important;
-      font-size: 1rem !important;
-      background-color: pink;
+      gap: 0.5rem !important;
+      font-size: 0.6rem !important;
+      background-color: transparent;
+      justify-content: center;
+    }
+    p > img, video {
+        width: 2.5rem !important;
+        height:2.5rem !important;
+        aspect-ratio: 3/4;
     }
 
+    .image{
+      margin-top: 0;
+      aspect-ratio: unset;
+      width: 5rem;
+      height:5rem;
+    }
   }
