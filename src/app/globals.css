@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.attribution{
+.attribution {
   display: none !important;
 }
 
-.image{
+.image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -88,6 +88,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -96,6 +97,7 @@
 .gradient-bg {
   @apply bg-gradient-to-r from-green-300 to-green-500;
 }
+
 .gradient-text {
   @apply gradient-bg text-transparent bg-clip-text;
 }
@@ -108,79 +110,90 @@
 /* IFRAME */
 
 
-.frame-container{
+.frame-container {
   margin-top: 2rem;
-  width:100vw;
+  width: 100vw;
   /* height :100%; */
   display: flex !important;
   justify-content: space-evenly;
   row-gap: 1rem;
   flex-wrap: wrap;
   padding: 1rem;
+}
+
+.frame-container > iframe {
+  /* width: clamp(30vw, 50%, 40vw) !important; */
+  /* height: clamp(30vh, 50%, 40vh) !important; */
+  width: 30rem;
+  height: 30rem !important;
+}
+
+#authorText {
+  display: none !important;
+}
+
+.attribution-container {
+  display: none !important;
+}
+
+.attribution {
+  content: "Raj Malpani" !important;
+}
+
+
+@media screen and (min-width:1400px) {}
+
+@media (max-width:1400px) {}
+
+@media (min-width:1280px) and (max-width:1400px) {}
+
+@media (min-width:1024px) and (max-width:1280px) {}
+
+@media (min-width:640px) and (max-width:1024px) {
+  ul {
+    gap: 2rem !important;
   }
 
-  .frame-container > iframe{
-    /* width: clamp(30vw, 50%, 40vw) !important; */
-    /* height: clamp(30vh, 50%, 40vh) !important; */
-    width: 30rem;
-    height: 30rem !important;
+  p > img,
+  video {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    aspect-ratio: 3/4;
+    margin: 1rem 0;
   }
 
-  #authorText{
-    display: none !important;
+  .image {
+    margin-top: 0;
+    aspect-ratio: unset;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width:640px) {
+  .grid {
+    padding: 0 !important;
   }
 
-  .attribution-container{
-    display: none !important;
+  ul {
+    gap: 0.5rem !important;
+    font-size: 0.6rem !important;
+    background-color: transparent;
+    justify-content: center;
   }
 
-  .attribution{
-    content: "Raj Malpani" !important;
+  p > img,
+  video {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    aspect-ratio: 3/4;
+    margin: 1rem 0;
   }
 
-
-  @media screen and (min-width:1400px){
-    
+  .image {
+    margin-top: 0;
+    aspect-ratio: unset;
+    width: 5rem;
+    height: 5rem;
   }
-
-  @media (max-width:1400px){
-    
-  }
-
-  @media (min-width:1280px) and (max-width:1400px){
-    
-  }
-
-  @media (min-width:1024px) and (max-width:1280px){
-    
-  }
-
-  @media (min-width:640px) and (max-width:1024px){
-    ul{
-      gap: 2rem !important;
-    }
-  }
-
-  @media (max-width:640px){
-    .grid{
-      padding: 0 !important;
-    }
-    ul{
-      gap: 0.5rem !important;
-      font-size: 0.6rem !important;
-      background-color: transparent;
-      justify-content: center;
-    }
-    p > img, video {
-        width: 2.5rem !important;
-        height:2.5rem !important;
-        aspect-ratio: 3/4;
-    }
-
-    .image{
-      margin-top: 0;
-      aspect-ratio: unset;
-      width: 5rem;
-      height:5rem;
-    }
-  }
+}

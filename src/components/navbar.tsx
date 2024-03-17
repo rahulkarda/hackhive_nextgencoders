@@ -7,7 +7,7 @@ import Logo from "@/assets/logo.png"
 export function Navbar() {
   return (
     <nav className="flex fixed top-0 left-0 backdrop-blur-sm z-50 bg-slate-200">
-      <div className="flex w-screen items-center justify-around p-4">
+      <div className="flex w-screen items-center justify-evenly p-4">
         <div>
           <p className="scroll-m-20 text-xl font-semibold">
             <Image
@@ -33,8 +33,8 @@ export function Navbar() {
             <Link href="/models">3D Models</Link>
           </li>
         </ul>
-      </div>
       <ThemeToggle />
+      </div>
     </nav>
   );
 }
